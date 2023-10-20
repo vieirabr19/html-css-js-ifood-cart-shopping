@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const cartCount = document.querySelector(".cart-icon span");
   const sidebar = document.querySelector(".sidebar");
   const sidebarClose = document.querySelector(".sidebar__close");
-  const sidebar__total = document.querySelector(".sidebar__total");
+  const sidebarTotal = document.querySelector(".sidebar__total");
   const sidebarItems = document.querySelector(".sidebar__items");
   const totalCartHeader = document.querySelector(".total__cart");
 
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // update total amount
   function updateTotalAmount() {
-    sidebar__total.textContent = `$${totalAmount.toFixed(2)}`;
+    sidebarTotal.textContent = `$${totalAmount.toFixed(2)}`;
   }
 
   // update cart items
